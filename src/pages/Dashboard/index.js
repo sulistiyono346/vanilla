@@ -31,6 +31,17 @@ function Dashboard() {
 
   const handleSelectOption = (event) => {
     setSelectedOption(event.target.value);
+    if (event?.target?.value && debouncedValue) {
+      dispatch(
+        handleSearch({
+          payload: debouncedValue,
+          page: 1,
+          type: event.target.value,
+        })
+      );
+    } else {
+      dispatch(resetApiData());
+    }
   };
 
   useEffect(() => {
