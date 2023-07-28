@@ -1,0 +1,70 @@
+.p-dashboard {
+  padding: 40px 120px;
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+  }
+  .h1 {
+    font-size: 28px;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 21px;
+    }
+  }
+  .h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #808080;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container {
+    margin-right: 10px;
+    img {
+      height: 42px;
+      width: 42px;
+    }
+  }
+
+  .content {
+    margin-top: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media (max-width: 768px) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .pagination-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .empty-container {
+    margin: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .ilustration {
+      img {
+        height: 240px;
+        width: 240px;
+      }
+    }
+    @media (max-width: 768px) {
+      margin: 10px;
+    }
+  }
+}
