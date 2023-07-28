@@ -11,7 +11,7 @@ const Card = ({ item }) => {
   return (
     <div
       className="card"
-      onClick={() => handleClick(item?.homepage)}
+      onClick={() => handleClick(item?.homepage || item.html_url)}
       data-testid="card"
     >
       <div className="header-card">
