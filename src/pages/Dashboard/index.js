@@ -7,7 +7,7 @@ import { useDebounce } from "use-debounce";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { handleSearch } from "../../store/slices/thunk";
 
-import Pagination from "../../components/Pagination";
+import Pagination from "../../components/pagination";
 import Card from "../../components/card";
 import Input from "../../components/input";
 import Select from "../../components/select";

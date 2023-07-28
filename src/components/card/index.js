@@ -9,7 +9,11 @@ const Card = ({ item }) => {
     window.open(url);
   };
   return (
-    <div className="card" onClick={() => handleClick(item?.homepage)}>
+    <div
+      className="card"
+      onClick={() => handleClick(item?.homepage)}
+      data-testid="card"
+    >
       <div className="header-card">
         <div className="avatar-picture">
           <img src={item?.avatar_url || item?.owner.avatar_url} alt="avatar" />
