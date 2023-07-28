@@ -18,7 +18,7 @@ function Dashboard() {
   const dispatch = useDispatch();
   const dropdownOptions = ["Users", "Repositories"];
   const [inputValue, setInputValue] = useState("");
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState("Users");
   const [currentPage, setCurrentPage] = useState(1);
   const [debouncedValue] = useDebounce(inputValue, 500);
 
